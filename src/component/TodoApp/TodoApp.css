@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    background-color: hsla(192, 12%, 8%, 0.722);
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.todo-container {
+    width: 350px;
+    background: rgba(0, 0, 0, 0.5); /* Darker glass effect */
+    backdrop-filter: blur(12px); /* Slightly more blur for depth */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Darker shadow for contrast */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+}
+
+h1 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.input-section {
+    background-color: rgba(255, 255, 255, 0.1); /* Darker input section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow */
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.4); /* Darker input field */
+    color: #ffffff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input::placeholder {
+    color: #b3b3b3; /* Softer placeholder text */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark glass effect for list items */
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+ul li:hover {
+    transform: scale(1.03); /* Slightly more pronounced scale on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+ul li .icon-container {
+    display: flex;
+    gap: 10px;
+}
+
+ul li i {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+ul li i.fa-edit {
+    color: #66BB6A; /* Slightly lighter green */
+    margin-left: auto;
+}
+
+ul li i.fa-trash {
+    color: #EF5350; /* Slightly lighter red */
+}
+button[type="button"] {
+    padding: 10px 20px; /* Medium size for a balanced look */
+    border: none;
+    background-color: #26b62dda;
+    border-radius: 6px; /* Rounded corners for a modern look */
+    cursor: pointer;
+    color: #ffffff; /* White text for contrast */
+    font-size: 14px;
+    font-weight: bold; /* Bold text for emphasis */
+    margin: 6px; /* Adequate spacing between buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    outline: none; /* Remove default button outline */
+}
+
+button[type="button"]:hover {
+    transform: scale(1.03); /* Slightly larger on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+button.confirm {
+    background: linear-gradient(135deg, #4caf50, #388e3c); /* Vibrant green gradient for Confirm List */
+    border: 1px solid #388e3c; /* Border matching the darker gradient color */
+    color: #763939; /* Change this to your desired text color */
+}
+
+button.confirm:hover {
+    background: linear-gradient(135deg, #388e3c, #2c6d2f); /* Slightly darker green gradient on hover */
+    color: #763939; /* Ensure hover color matches */
+}
+
+
+button.modify {
+    background: linear-gradient(135deg, #ffeb3b, #fbc02d); /* Vibrant yellow gradient for Modify */
+    border: 1px solid #fbc02d; /* Border matching the darker gradient color */
+}
+
+button.modify:hover {
+    background: linear-gradient(135deg, #fbc02d, #f9a825); /* Slightly darker yellow gradient on hover */
+}
